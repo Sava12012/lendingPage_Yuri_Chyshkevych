@@ -13,7 +13,7 @@
 :root {
   --bg-color: #fdfdfd;
   --text-color: #333;
-  --main-color: #754ef9;
+  --main-color: hsl(229, 91%, 52%);
   --white-color: #fdfdfd;
   --shadow-color: rgba(0, 0, 0, 0.2);
 }
@@ -269,11 +269,10 @@ section {
 /* жорстко задав зображення */
 .home-img img {
   position: absolute;
-  /* bottom: 0; */
   top: 0;
   right: 0;
   width: 570px;
-  height: 788px;
+  height: 769px;
   pointer-events: none;
 }
 
@@ -293,8 +292,6 @@ span {
 }
 
 .about-img img {
-  /* width: 750px;
-  height: 687px; */
   width: 100%;
 }
 
@@ -605,6 +602,10 @@ span {
   }
   .home .profession-container .overlay {
     right: -9rem;
+  }
+
+  .home-img img {
+    height: 756px;
   }
 }
 
