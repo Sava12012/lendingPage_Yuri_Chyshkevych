@@ -112,6 +112,7 @@ section {
 .home {
   display: flex;
   align-items: center;
+  padding: 10rem 7% 10rem;
 }
 .home .home-content {
   max-width: 44rem;
@@ -169,9 +170,10 @@ section {
 
 .home .profession-container {
   position: absolute;
-  top: 50%;
+  /* top: 50%; */
+  top: 0;
   right: 0;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
   width: 768px;
   height: 768px;
   overflow: hidden;
@@ -264,10 +266,11 @@ section {
   border-left: 384px solid transparent;
 }
 
-/* жорс тко задав зображення */
+/* жорстко задав зображення */
 .home-img img {
   position: absolute;
-  bottom: 0;
+  /* bottom: 0; */
+  top: 0;
   right: 0;
   width: 570px;
   height: 788px;
@@ -618,6 +621,9 @@ span {
   .home .profession-container .overlay {
     right: -15rem;
   }
+  .home .home-content {
+    max-width: 40rem;
+  }
 }
 
 @media (max-width: 991px) {
@@ -632,7 +638,7 @@ span {
   }
 
   .home .home-content {
-    max-width: 50rem;
+    max-width: 40rem;
   }
   .home .profession-container .profession-box {
     right: -45rem;
@@ -711,12 +717,17 @@ span {
     justify-content: center;
     text-align: center;
   }
+
+  .home .home-content {
+    max-width: 70rem;
+  }
+
   .home-content h3 {
     font-size: 2.6rem;
   }
 
   .home-content h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   .home-content .social-media a {
     margin: 2.5rem 0.75rem 3rem;
@@ -726,6 +737,8 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .home .profession-box .profession {
@@ -758,11 +771,7 @@ span {
   }
 
   .home .profession-container .profession-box {
-    position: fixed;
-    top: 60%;
-    left: 0;
-    border-radius: 0;
-    width: 100%;
+    display: none;
   }
 
   .home .profession-container .overlay {
@@ -771,8 +780,13 @@ span {
     left: 50%;
     right: 0;
     transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
-    border-width: 23.9rem;
+    border-width: auto;
   }
+
+  .home .profession-box {
+    display: none;
+  }
+
   .about {
     flex-direction: column-reverse;
     text-align: center;
