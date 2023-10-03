@@ -321,7 +321,7 @@
 
     <!-- contact section -->
 
-    <section class="contact" id="contact">
+    <!-- <section class="contact" id="contact">
         <h2 class="heading">Напишіть <span>Мені</span></h2>
         <form action="#">
             <div class="input-box">
@@ -333,6 +333,23 @@
                 <input type="text" placeholder="Тема Листа">
             </div>
             <textarea name="" id="" cols="30" rows="10" placeholder="Ваше Повідомлення"></textarea>
+            <input type="submit" value="Відправити Повідомлення" class="btn">
+        </form>
+    </section> -->
+
+    <!-- Для хостингу @mail на Formspree -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Напишіть <span>Мені</span></h2>
+        <form action="https://formspree.io/f/xyyqbdnl" method="POST">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Повне Ім'я">
+                <input type="email" name="email" placeholder="Електронна Пошта">
+            </div>
+            <div class="input-box">
+                <input type="number" name="number" placeholder="Мобільний Номер">
+                <input type="text" name="_subject" placeholder="Тема Листа">
+            </div>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Ваше Повідомлення"></textarea>
             <input type="submit" value="Відправити Повідомлення" class="btn">
         </form>
     </section>
