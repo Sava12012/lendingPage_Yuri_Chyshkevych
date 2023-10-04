@@ -13,7 +13,7 @@
 :root {
   --bg-color: #fdfdfd;
   --text-color: #333;
-  --main-color: hsl(229, 91%, 52%);
+  --main-color: #3ebfdf;
   --white-color: #fdfdfd;
   --shadow-color: rgba(0, 0, 0, 0.2);
   --shadow-box-color: rgba(0, 0, 0, 0.469);
@@ -291,7 +291,7 @@ span {
 }
 
 .about-img {
-  width: 100vw;
+  width: 300vw;
 }
 
 .about-img img {
