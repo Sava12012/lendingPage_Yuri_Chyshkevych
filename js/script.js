@@ -78,3 +78,10 @@ ScrollReveal().reveal(".home-content h1, .about-img img", { origin: "left" });
 ScrollReveal().reveal(".home-content h3, .home-content p, .about-content", {
   origin: "right",
 });
+
+/* Apply Imask.js phone mask here */
+const element = document.getElementById("selector");
+const maskOptions = {
+  mask: "+{3}(000)000-00-00",
+};
+const mask = IMask(element, maskOptions);
